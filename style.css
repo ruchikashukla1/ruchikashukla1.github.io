@@ -1,24 +1,23 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  color: #e6e0fa;
+  color: #ffdbff;
   background: radial-gradient(
       circle at 30% 40%,
-      rgba(30, 50, 160, 0.8),
-      rgba(53, 132, 255, 0.6),
-      rgba(94, 42, 180, 0.5),
-      rgba(200, 150, 255, 0.4),
-      rgba(64, 255, 186, 0.2),
-      rgba(255, 255, 160, 0.2),
+      rgba(30, 60, 160, 0.8),
+      rgba(60, 160, 255, 0.7),
+      rgba(80, 220, 180, 0.6),
+      rgba(255, 230, 120, 0.5),
+      rgba(150, 60, 200, 0.4),
       #000
   ) fixed;
 
-  background-size: cover;
-  overflow-x: hidden;
-}
+  color: #ffdbff;
+  border: 2px dotted rgba(255,219,255,0.6);
+  box-shadow: 0 0 8px rgba(255,219,255,0.6);
 
-#star-field {
-  position: fixed;
+  color: #ffdbff;
+  color: #ffdbff;
   top: 0;
   left: 0;
   width: 100%;
