@@ -4,8 +4,8 @@ function createStar(x = Math.random() * window.innerWidth, y = Math.random() * w
   const star = document.createElement('div');
   star.className = 'star';
   const size = Math.random() * 2 + 1;
-
-  star.style.width = `${size}px`;
+  star.addEventListener('animationend', () => star.remove());
+setInterval(() => createStar(), 500);
   star.style.height = `${size}px`;
   star.style.left = `${x}px`;
   star.style.top = `${y}px`;
