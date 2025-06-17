@@ -12,6 +12,7 @@ body {
       rgba(255, 255, 160, 0.2),
       #000
   ) fixed;
+
   background-size: cover;
   overflow-x: hidden;
 }
@@ -33,7 +34,9 @@ header {
 
 nav a {
   margin: 0 1rem;
+
   color: #e6e0fa;
+
   text-decoration: none;
 }
 
@@ -47,6 +50,7 @@ nav a {
   width: 300px;
   height: 300px;
   margin: 2rem auto;
+
   border-radius: 50%;
 }
 
@@ -58,9 +62,11 @@ nav a {
   width: 100%;
   height: 100%;
   border-radius: 50%;
+
   border: 2px dotted rgba(255,255,255,0.6);
   box-shadow: 0 0 8px rgba(255,255,255,0.6);
   animation: signal 20s linear infinite;
+
 }
 
 .timeline {
@@ -77,7 +83,9 @@ nav a {
   position: absolute;
   width: 120px;
   text-align: center;
+
   color: #e6e0fa;
+
 }
 
 .timeline li:nth-child(1) { transform: rotate(0deg) translateX(150px) rotate(0deg); }
@@ -85,6 +93,7 @@ nav a {
 .timeline li:nth-child(3) { transform: rotate(144deg) translateX(150px) rotate(-144deg); }
 .timeline li:nth-child(4) { transform: rotate(216deg) translateX(150px) rotate(-216deg); }
 .timeline li:nth-child(5) { transform: rotate(288deg) translateX(150px) rotate(-288deg); }
+
 
 .timeline .date {
   font-weight: bold;
@@ -97,6 +106,7 @@ nav a {
   gap: 3rem;
 }
 
+
 .planet {
   width: 120px;
   height: 120px;
@@ -105,7 +115,9 @@ nav a {
   display: flex;
   align-items: center;
   justify-content: center;
+
   color: #e6e0fa;
+
   font-size: 0.9rem;
   text-align: center;
 }
@@ -116,17 +128,21 @@ nav a {
 
 .planet-b {
   background: radial-gradient(circle at 60% 40%, #6fd1ff, #304bff);
+
 }
 
 .planet-c {
   background: radial-gradient(circle at 40% 60%, #ffb36f, #ff2f6f);
+
 }
 
 .star {
   position: absolute;
+
   background: radial-gradient(circle, #ffffff, rgba(255,255,255,0));
   border-radius: 50%;
   box-shadow: 0 0 6px 2px rgba(255,255,255,0.7);
+
   animation: twinkle 4s linear forwards;
 }
 
@@ -140,3 +156,4 @@ nav a {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
