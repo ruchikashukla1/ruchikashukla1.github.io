@@ -1,17 +1,17 @@
 body {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   color: #fff;
   text-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
-
   background:
-    radial-gradient(circle at 25% 35%, rgba(250, 120, 200, 0.6), rgba(140, 80, 220, 0.5) 40%, transparent 70%),
-    radial-gradient(circle at 70% 25%, rgba(90, 160, 255, 0.5), rgba(40, 80, 200, 0.4) 40%, transparent 80%),
-    radial-gradient(circle at 40% 80%, rgba(70, 200, 170, 0.4), rgba(30, 90, 80, 0.3) 40%, transparent 80%),
-    radial-gradient(circle at 80% 70%, rgba(255, 210, 120, 0.3), rgba(200, 80, 220, 0.4) 60%, transparent 90%),
+    radial-gradient(circle at 20% 30%, rgba(255, 120, 220, 0.6), rgba(120, 70, 200, 0.5) 45%, transparent 80%),
+    radial-gradient(circle at 70% 25%, rgba(100, 170, 255, 0.5), rgba(40, 90, 200, 0.4) 45%, transparent 85%),
+    radial-gradient(circle at 35% 75%, rgba(60, 180, 150, 0.5), rgba(20, 80, 70, 0.4) 40%, transparent 80%),
+    radial-gradient(circle at 80% 70%, rgba(255, 215, 130, 0.4), rgba(200, 80, 220, 0.4) 55%, transparent 90%),
     #000;
-  background-size: cover;
+  background-size: 400% 400%;
   background-attachment: fixed;
+  animation: nebula-swirl 60s ease-in-out infinite;
 
   overflow-x: hidden;
 }
@@ -161,5 +161,11 @@ nav a {
 @keyframes signal {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+@keyframes nebula-swirl {
+  0% { background-position: 0% 0%; }
+  50% { background-position: 100% 100%; }
+  100% { background-position: 0% 0%; }
 }
 
