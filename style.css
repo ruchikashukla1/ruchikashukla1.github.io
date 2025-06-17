@@ -1,7 +1,9 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  color: #000;
+  color: #fff;
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
+
   background:
     radial-gradient(circle at 25% 35%, rgba(250, 120, 200, 0.6), rgba(140, 80, 220, 0.5) 40%, transparent 70%),
     radial-gradient(circle at 70% 25%, rgba(90, 160, 255, 0.5), rgba(40, 80, 200, 0.4) 40%, transparent 80%),
@@ -31,7 +33,9 @@ header {
 
 nav a {
   margin: 0 1rem;
-  color: #000;
+  color: #fff;
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.7);
+
   text-decoration: none;
 }
 
@@ -40,6 +44,7 @@ nav a {
   background: linear-gradient(to right, #fdfbfb, #ebedee);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
 
 }
 
@@ -85,7 +90,8 @@ nav a {
   position: absolute;
   width: 120px;
   text-align: center;
-  color: #000;
+  color: #fff;
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.6);
 
 }
 
@@ -115,7 +121,8 @@ nav a {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #000;
+  color: #fff;
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.6);
 
   font-size: 0.9rem;
   text-align: center;
@@ -140,13 +147,14 @@ nav a {
   background: #fff;
   border-radius: 50%;
   box-shadow: 0 0 6px rgba(255,255,255,0.6);
-  opacity: 0.2;
-  animation: twinkle 6s ease-in-out infinite;
+  animation: star-fade 8s ease-out forwards;
 }
 
-@keyframes twinkle {
-  0%, 100% { opacity: 0.2; }
-  50% { opacity: 1; }
+@keyframes star-fade {
+  0% { opacity: 0; transform: scale(0); }
+  10% { opacity: 1; transform: scale(1); }
+  90% { opacity: 1; }
+  100% { opacity: 0; transform: scale(0); }
 
 }
 

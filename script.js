@@ -10,10 +10,10 @@ function createStar(x = Math.random() * window.innerWidth, y = Math.random() * w
   star.style.left = `${x}px`;
   star.style.top = `${y}px`;
   starField.appendChild(star);
-  setTimeout(() => star.remove(), 20000);
+  star.addEventListener('animationend', () => star.remove());
 }
 
-setInterval(() => createStar(), 300);
+setInterval(() => createStar(), 500);
 
 
 document.addEventListener('mousemove', (e) => {
