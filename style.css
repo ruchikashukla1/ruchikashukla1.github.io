@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  background: radial-gradient(circle at 30% 40%, rgba(255, 255, 160, 0.8), rgba(64, 255, 186, 0.6), rgba(53, 132, 255, 0.5), rgba(157, 77, 255, 0.4), #000) fixed;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+#star-field {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+nav a {
+  margin: 0 1rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.section {
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.orbit {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 2rem auto;
+  border-radius: 50%;
+}
+
+.orbit::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px dotted rgba(255,255,255,0.6);
+  box-shadow: 0 0 8px rgba(255,255,255,0.6);
+  animation: signal 20s linear infinite;
+}
+
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.timeline li {
+  position: absolute;
+  width: 120px;
+  text-align: center;
+  color: #ffebff;
+}
+
+.timeline li:nth-child(1) { transform: rotate(0deg) translateX(150px) rotate(0deg); }
+.timeline li:nth-child(2) { transform: rotate(72deg) translateX(150px) rotate(-72deg); }
+.timeline li:nth-child(3) { transform: rotate(144deg) translateX(150px) rotate(-144deg); }
+.timeline li:nth-child(4) { transform: rotate(216deg) translateX(150px) rotate(-216deg); }
+.timeline li:nth-child(5) { transform: rotate(288deg) translateX(150px) rotate(-288deg); }
+
+.timeline .date {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.planet {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.planet-a {
+  background: radial-gradient(circle at 30% 30%, #ffe99f, #ff6f6f);
+}
+
+.planet-b {
+  background: radial-gradient(circle at 60% 40%, #6fd1ff, #304bff);
+}
+
+.planet-c {
+  background: radial-gradient(circle at 40% 60%, #ffb36f, #ff2f6f);
+}
+
+.star {
+  position: absolute;
+  background: radial-gradient(circle, #ffffff, rgba(255,255,255,0));
+  border-radius: 50%;
+  box-shadow: 0 0 6px 2px rgba(255,255,255,0.7);
+  animation: twinkle 4s linear forwards;
+}
+
+@keyframes twinkle {
+  from { opacity: 0; }
+  50% { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@keyframes signal {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
