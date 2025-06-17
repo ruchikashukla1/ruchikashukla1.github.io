@@ -1,9 +1,17 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  color: #ffffff;
-
-  background: radial-gradient(circle at 30% 40%, rgba(255, 255, 160, 0.8), rgba(64, 255, 186, 0.6), rgba(53, 132, 255, 0.5), rgba(157, 77, 255, 0.4), #000) fixed;
+  color: #e6e0fa;
+  background: radial-gradient(
+      circle at 30% 40%,
+      rgba(30, 50, 160, 0.8),
+      rgba(53, 132, 255, 0.6),
+      rgba(94, 42, 180, 0.5),
+      rgba(200, 150, 255, 0.4),
+      rgba(64, 255, 186, 0.2),
+      rgba(255, 255, 160, 0.2),
+      #000
+  ) fixed;
 
   background-size: cover;
   overflow-x: hidden;
@@ -26,7 +34,9 @@ header {
 
 nav a {
   margin: 0 1rem;
-  color: #fff;
+
+  color: #e6e0fa;
+
   text-decoration: none;
 }
 
@@ -73,7 +83,9 @@ nav a {
   position: absolute;
   width: 120px;
   text-align: center;
-  color: #ffebff;
+
+  color: #e6e0fa;
+
 }
 
 .timeline li:nth-child(1) { transform: rotate(0deg) translateX(150px) rotate(0deg); }
@@ -103,7 +115,9 @@ nav a {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
+
+  color: #e6e0fa;
+
   font-size: 0.9rem;
   text-align: center;
 }
@@ -137,8 +151,6 @@ nav a {
   50% { opacity: 1; }
   to { opacity: 0; }
 }
-
-
 
 @keyframes signal {
   from { transform: rotate(0deg); }
