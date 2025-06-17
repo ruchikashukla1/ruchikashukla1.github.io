@@ -10,6 +10,9 @@ function createStar(x = Math.random() * window.innerWidth, y = Math.random() * w
   star.style.left = `${x}px`;
   star.style.top = `${y}px`;
 
+  const hues = [0, 60, 120, 180, 240, 300];
+  star.style.filter = `hue-rotate(${hues[Math.floor(Math.random()*hues.length)]}deg)`;
+
   starField.appendChild(star);
   setTimeout(() => star.remove(), 4000);
 }
@@ -20,4 +23,5 @@ setInterval(() => createStar(), 200);
 document.addEventListener('mousemove', (e) => {
   createStar(e.clientX, e.clientY);
 });
+
 
