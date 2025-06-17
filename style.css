@@ -3,6 +3,7 @@ body {
   font-family: 'Poppins', sans-serif;
   color: #fff;
   text-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
+
   background:
     radial-gradient(circle at 25% 35%, rgba(250, 120, 200, 0.6), rgba(140, 80, 220, 0.5) 40%, transparent 70%),
     radial-gradient(circle at 70% 25%, rgba(90, 160, 255, 0.5), rgba(40, 80, 200, 0.4) 40%, transparent 80%),
@@ -11,6 +12,7 @@ body {
     #000;
   background-size: cover;
   background-attachment: fixed;
+
   overflow-x: hidden;
 }
 
@@ -33,6 +35,7 @@ nav a {
   margin: 0 1rem;
   color: #fff;
   text-shadow: 0 0 4px rgba(255, 255, 255, 0.7);
+
   text-decoration: none;
 }
 
@@ -42,6 +45,7 @@ nav a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
+
 }
 
 .section {
@@ -54,6 +58,7 @@ nav a {
   width: 300px;
   height: 300px;
   margin: 2rem auto;
+
   border-radius: 50%;
 }
 
@@ -68,6 +73,7 @@ nav a {
   border: 2px dotted rgba(255,136,232,0.6);
   box-shadow: 0 0 8px rgba(255,136,232,0.6);
   animation: signal 20s linear infinite;
+
 }
 
 .timeline {
@@ -86,6 +92,7 @@ nav a {
   text-align: center;
   color: #fff;
   text-shadow: 0 0 4px rgba(255, 255, 255, 0.6);
+
 }
 
 .timeline li:nth-child(1) { transform: rotate(0deg) translateX(150px) rotate(0deg); }
@@ -105,6 +112,7 @@ nav a {
   gap: 3rem;
 }
 
+
 .planet {
   width: 120px;
   height: 120px;
@@ -115,6 +123,7 @@ nav a {
   justify-content: center;
   color: #fff;
   text-shadow: 0 0 4px rgba(255, 255, 255, 0.6);
+
   font-size: 0.9rem;
   text-align: center;
 }
@@ -125,10 +134,12 @@ nav a {
 
 .planet-b {
   background: radial-gradient(circle at 60% 40%, #6fd1ff, #304bff);
+
 }
 
 .planet-c {
   background: radial-gradient(circle at 40% 60%, #ffb36f, #ff2f6f);
+
 }
 
 .star {
@@ -144,9 +155,11 @@ nav a {
   10% { opacity: 1; transform: scale(1); }
   90% { opacity: 1; }
   100% { opacity: 0; transform: scale(0); }
+
 }
 
 @keyframes signal {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
