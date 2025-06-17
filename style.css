@@ -2,7 +2,9 @@ body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   color: #ffffff;
+
   background: radial-gradient(circle at 20% 30%, #ffe08a, #40ffba, #3584ff, #9d4dff, #000000) no-repeat;
+
   background-size: cover;
   overflow-x: hidden;
 }
@@ -38,6 +40,7 @@ nav a {
   width: 300px;
   height: 300px;
   margin: 2rem auto;
+
   border-radius: 50%;
 }
 
@@ -52,6 +55,7 @@ nav a {
   border: 2px dashed rgba(255,255,255,0.4);
   box-shadow: 0 0 8px rgba(255,255,255,0.5);
   animation: signal 15s linear infinite;
+
 }
 
 .timeline {
@@ -76,6 +80,7 @@ nav a {
 .timeline li:nth-child(3) { transform: rotate(180deg) translateX(150px) rotate(-180deg); }
 .timeline li:nth-child(4) { transform: rotate(270deg) translateX(150px) rotate(-270deg); }
 
+
 .timeline .date {
   font-weight: bold;
   margin-bottom: 0.5rem;
@@ -86,6 +91,7 @@ nav a {
   justify-content: center;
   gap: 3rem;
 }
+
 
 .planet {
   width: 120px;
@@ -106,6 +112,7 @@ nav a {
 
 .planet-b {
   background: radial-gradient(circle at 60% 40%, #6fd1ff, #304bff);
+
 }
 
 .star {
@@ -121,7 +128,9 @@ nav a {
   to { opacity: 0; }
 }
 
+
 @keyframes signal {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
