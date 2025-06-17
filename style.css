@@ -10,6 +10,7 @@ body {
     #000;
   background-size: cover;
   background-attachment: fixed;
+
   overflow-x: hidden;
 }
 
@@ -39,6 +40,7 @@ nav a {
   background: linear-gradient(to right, #fdfbfb, #ebedee);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
 }
 
 .section {
@@ -51,6 +53,7 @@ nav a {
   width: 300px;
   height: 300px;
   margin: 2rem auto;
+
   border-radius: 50%;
 }
 
@@ -65,6 +68,7 @@ nav a {
   border: 2px dotted rgba(255,136,232,0.6);
   box-shadow: 0 0 8px rgba(255,136,232,0.6);
   animation: signal 20s linear infinite;
+
 }
 
 .timeline {
@@ -82,6 +86,7 @@ nav a {
   width: 120px;
   text-align: center;
   color: #000;
+
 }
 
 .timeline li:nth-child(1) { transform: rotate(0deg) translateX(150px) rotate(0deg); }
@@ -101,6 +106,7 @@ nav a {
   gap: 3rem;
 }
 
+
 .planet {
   width: 120px;
   height: 120px;
@@ -110,6 +116,7 @@ nav a {
   align-items: center;
   justify-content: center;
   color: #000;
+
   font-size: 0.9rem;
   text-align: center;
 }
@@ -120,10 +127,12 @@ nav a {
 
 .planet-b {
   background: radial-gradient(circle at 60% 40%, #6fd1ff, #304bff);
+
 }
 
 .planet-c {
   background: radial-gradient(circle at 40% 60%, #ffb36f, #ff2f6f);
+
 }
 
 .star {
@@ -138,9 +147,11 @@ nav a {
 @keyframes twinkle {
   0%, 100% { opacity: 0.2; }
   50% { opacity: 1; }
+
 }
 
 @keyframes signal {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+

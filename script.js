@@ -4,6 +4,7 @@ function createStar(x = Math.random() * window.innerWidth, y = Math.random() * w
   const star = document.createElement('div');
   star.className = 'star';
   const size = Math.random() * 2 + 1;
+
   star.style.width = `${size}px`;
   star.style.height = `${size}px`;
   star.style.left = `${x}px`;
@@ -13,6 +14,7 @@ function createStar(x = Math.random() * window.innerWidth, y = Math.random() * w
 }
 
 setInterval(() => createStar(), 300);
+
 
 document.addEventListener('mousemove', (e) => {
   createStar(e.clientX, e.clientY);
