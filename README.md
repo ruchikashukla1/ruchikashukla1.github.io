@@ -1,6 +1,6 @@
 # Ruchika Shukla Portfolio
 
-A simple cosmic-themed portfolio website with a colorful nebula background, interactive stars, an orbital timeline for experience, and planet-themed project cards.
+A cosmic-themed portfolio website with a soft nebula of yellow, green and blue tones. It features an interactive star field, a dotted star stream orbit showcasing work and education, and projects represented as glowing planets.
 
 
 Open `index.html` in your browser to explore.

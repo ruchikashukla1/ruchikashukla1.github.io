@@ -2,14 +2,20 @@ body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   color: #ffffff;
-
-  background: radial-gradient(circle at 20% 30%, #ffe08a, #40ffba, #3584ff, #9d4dff, #000000) no-repeat;
-
-  background-size: cover;
-  overflow-x: hidden;
+  background: radial-gradient(circle at 30% 40%, rgba(255, 255, 160, 0.8), rgba(64, 255, 186, 0.6), rgba(53, 132, 255, 0.5), rgba(157, 77, 255, 0.4), #000) fixed;
+  border: 2px dotted rgba(255,255,255,0.6);
+  box-shadow: 0 0 8px rgba(255,255,255,0.6);
+  animation: signal 20s linear infinite;
+.timeline li:nth-child(2) { transform: rotate(72deg) translateX(150px) rotate(-72deg); }
+.timeline li:nth-child(3) { transform: rotate(144deg) translateX(150px) rotate(-144deg); }
+.timeline li:nth-child(4) { transform: rotate(216deg) translateX(150px) rotate(-216deg); }
+.timeline li:nth-child(5) { transform: rotate(288deg) translateX(150px) rotate(-288deg); }
+.planet-c {
+  background: radial-gradient(circle at 40% 60%, #ffb36f, #ff2f6f);
 }
 
-#star-field {
+  background: radial-gradient(circle, #ffffff, rgba(255,255,255,0));
+  box-shadow: 0 0 6px 2px rgba(255,255,255,0.7);
   position: fixed;
   top: 0;
   left: 0;

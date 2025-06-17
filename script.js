@@ -1,5 +1,7 @@
 const starField = document.getElementById('star-field');
 
+  const hues = [0, 60, 120, 180, 240, 300];
+  star.style.filter = `hue-rotate(${hues[Math.floor(Math.random()*hues.length)]}deg)`;
 
 function createStar(x = Math.random() * window.innerWidth, y = Math.random() * window.innerHeight) {
   const star = document.createElement('div');
