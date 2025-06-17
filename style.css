@@ -1,6 +1,18 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
+<<<<<<< cdii2m-codex/create-galaxy-and-music-themed-portfolio-website
+  color: #ffdbff;
+  background: radial-gradient(
+      circle at 30% 40%,
+      rgba(30, 60, 160, 0.8),
+      rgba(60, 160, 255, 0.7),
+      rgba(80, 220, 180, 0.6),
+      rgba(255, 230, 120, 0.5),
+      rgba(150, 60, 200, 0.4),
+      #000
+  ) fixed;
+=======
   color: #e6e0fa;
   background: radial-gradient(
       circle at 30% 40%,
@@ -13,6 +25,7 @@ body {
       #000
   ) fixed;
 
+>>>>>>> main
   background-size: cover;
   overflow-x: hidden;
 }
@@ -34,9 +47,13 @@ header {
 
 nav a {
   margin: 0 1rem;
+<<<<<<< cdii2m-codex/create-galaxy-and-music-themed-portfolio-website
+  color: #ffdbff;
+=======
 
   color: #e6e0fa;
 
+>>>>>>> main
   text-decoration: none;
 }
 
@@ -50,7 +67,10 @@ nav a {
   width: 300px;
   height: 300px;
   margin: 2rem auto;
+<<<<<<< cdii2m-codex/create-galaxy-and-music-themed-portfolio-website
+=======
 
+>>>>>>> main
   border-radius: 50%;
 }
 
@@ -62,11 +82,17 @@ nav a {
   width: 100%;
   height: 100%;
   border-radius: 50%;
+<<<<<<< cdii2m-codex/create-galaxy-and-music-themed-portfolio-website
+  border: 2px dotted rgba(255,219,255,0.6);
+  box-shadow: 0 0 8px rgba(255,219,255,0.6);
+  animation: signal 20s linear infinite;
+=======
 
   border: 2px dotted rgba(255,255,255,0.6);
   box-shadow: 0 0 8px rgba(255,255,255,0.6);
   animation: signal 20s linear infinite;
 
+>>>>>>> main
 }
 
 .timeline {
@@ -83,9 +109,13 @@ nav a {
   position: absolute;
   width: 120px;
   text-align: center;
+<<<<<<< cdii2m-codex/create-galaxy-and-music-themed-portfolio-website
+  color: #ffdbff;
+=======
 
   color: #e6e0fa;
 
+>>>>>>> main
 }
 
 .timeline li:nth-child(1) { transform: rotate(0deg) translateX(150px) rotate(0deg); }
@@ -94,7 +124,10 @@ nav a {
 .timeline li:nth-child(4) { transform: rotate(216deg) translateX(150px) rotate(-216deg); }
 .timeline li:nth-child(5) { transform: rotate(288deg) translateX(150px) rotate(-288deg); }
 
+<<<<<<< cdii2m-codex/create-galaxy-and-music-themed-portfolio-website
+=======
 
+>>>>>>> main
 .timeline .date {
   font-weight: bold;
   margin-bottom: 0.5rem;
@@ -106,7 +139,10 @@ nav a {
   gap: 3rem;
 }
 
+<<<<<<< cdii2m-codex/create-galaxy-and-music-themed-portfolio-website
+=======
 
+>>>>>>> main
 .planet {
   width: 120px;
   height: 120px;
@@ -115,9 +151,13 @@ nav a {
   display: flex;
   align-items: center;
   justify-content: center;
+<<<<<<< cdii2m-codex/create-galaxy-and-music-themed-portfolio-website
+  color: #ffdbff;
+=======
 
   color: #e6e0fa;
 
+>>>>>>> main
   font-size: 0.9rem;
   text-align: center;
 }
@@ -128,21 +168,33 @@ nav a {
 
 .planet-b {
   background: radial-gradient(circle at 60% 40%, #6fd1ff, #304bff);
+<<<<<<< cdii2m-codex/create-galaxy-and-music-themed-portfolio-website
+=======
 
+>>>>>>> main
 }
 
 .planet-c {
   background: radial-gradient(circle at 40% 60%, #ffb36f, #ff2f6f);
+<<<<<<< cdii2m-codex/create-galaxy-and-music-themed-portfolio-website
+=======
 
+>>>>>>> main
 }
 
 .star {
   position: absolute;
+<<<<<<< cdii2m-codex/create-galaxy-and-music-themed-portfolio-website
+  background: radial-gradient(circle, #ffffff, rgba(255,255,255,0));
+  border-radius: 50%;
+  box-shadow: 0 0 6px 2px rgba(255,255,255,0.7);
+=======
 
   background: radial-gradient(circle, #ffffff, rgba(255,255,255,0));
   border-radius: 50%;
   box-shadow: 0 0 6px 2px rgba(255,255,255,0.7);
 
+>>>>>>> main
   animation: twinkle 4s linear forwards;
 }
 
@@ -156,4 +208,7 @@ nav a {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+<<<<<<< cdii2m-codex/create-galaxy-and-music-themed-portfolio-website
+=======
 
+>>>>>>> main

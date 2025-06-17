@@ -22,4 +22,3 @@ setInterval(() => createStar(), 200);
 document.addEventListener('mousemove', (e) => {
   createStar(e.clientX, e.clientY);
 });
-
