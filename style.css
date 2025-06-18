@@ -233,6 +233,41 @@ nav a {
 
 }
 
+.moon-phases {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem auto;
+}
+
+.moon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #ccc;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
+}
+
+.moon.new {
+  background: #2b0a3d;
+}
+
+.moon.crescent {
+  background: radial-gradient(circle at 70% 50%, #ccc 40%, #2b0a3d 41%);
+}
+
+.moon.quarter {
+  background: linear-gradient(to right, #2b0a3d 50%, #ccc 50%);
+}
+
+.moon.gibbous {
+  background: radial-gradient(circle at 30% 50%, #2b0a3d 40%, #ccc 41%);
+}
+
+.moon.full {
+  background: #ccc;
+}
+
 .star {
   position: absolute;
   background: #fff;
