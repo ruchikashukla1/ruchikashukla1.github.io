@@ -10,7 +10,6 @@ function createStar(x = Math.random() * window.innerWidth, y = Math.random() * w
   star.style.left = `${x}px`;
   star.style.top = `${y}px`;
   starField.appendChild(star);
-  star.addEventListener('animationend', () => star.remove());
 }
 
 setInterval(() => createStar(), 500);
