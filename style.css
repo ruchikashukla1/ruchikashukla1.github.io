@@ -11,6 +11,7 @@ body {
     radial-gradient(circle at 50% 50%, #6699ff, #2b0a3d 60%);
   background-color: #2b0a3d;
   background-repeat: no-repeat;
+
   background-attachment: fixed;
 
   overflow-x: hidden;
