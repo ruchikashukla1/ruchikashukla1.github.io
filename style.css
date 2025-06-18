@@ -3,23 +3,16 @@ body {
   font-family: 'Quicksand', sans-serif;
   color: #fff;
   text-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
-  background: linear-gradient(
-      -45deg,
-      #ff99cc,
-      #ff66ff,
-      #ff0033,
-      #ffcc33,
-      #ffff66,
-      #ccff66,
-      #66ff99,
-      #66ffff,
-      #6699ff,
-      #9966ff,
-      #ff3366
-    );
-  background-size: 400% 400%;
+  background:
+    radial-gradient(circle at 20% 20%, #ff99cc, transparent 60%),
+    radial-gradient(circle at 80% 30%, #9966ff, transparent 60%),
+    radial-gradient(circle at 40% 80%, #66ff99, transparent 60%),
+    radial-gradient(circle at 70% 70%, #ffcc33, transparent 60%),
+    radial-gradient(circle at 50% 50%, #6699ff, #2b0a3d 60%);
+  background-color: #2b0a3d;
+  background-repeat: no-repeat;
+
   background-attachment: fixed;
-  animation: nebula-swirl 80s linear infinite;
 
   overflow-x: hidden;
 }
@@ -191,9 +184,4 @@ nav a {
   to { transform: rotate(360deg); }
 }
 
-@keyframes nebula-swirl {
-  0% { background-position: 0% 0%; }
-  50% { background-position: 100% 100%; }
-  100% { background-position: 0% 0%; }
-}
 
