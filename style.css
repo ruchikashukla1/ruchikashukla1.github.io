@@ -132,6 +132,63 @@ nav a {
   box-shadow: 0 0 8px rgba(255,136,232,0.6);
 }
 
+.orbit-road {
+  position: relative;
+  width: 600px;
+  height: 120px;
+  margin: 2rem auto;
+}
+
+.orbit-road svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.orbit-road path {
+  fill: none;
+  stroke: rgba(255,136,232,0.6);
+  stroke-width: 2;
+  stroke-dasharray: 5 5;
+  filter: drop-shadow(0 0 8px rgba(255,136,232,0.6));
+}
+
+.road-stops {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.road-stops li {
+  position: absolute;
+  transform: translateX(-50%);
+  color: #fff;
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.6);
+  font-weight: bold;
+}
+
+.road-stops li:nth-child(1) {
+  left: 0;
+  bottom: 0;
+}
+
+.road-stops li:nth-child(2) {
+  left: 50%;
+  bottom: 80px;
+}
+
+.road-stops li:nth-child(3) {
+  left: 100%;
+  bottom: 0;
+}
+
 
 .planet {
   position: absolute;
