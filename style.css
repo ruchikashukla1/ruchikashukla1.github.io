@@ -3,14 +3,18 @@ body {
   font-family: 'Quicksand', sans-serif;
   color: #fff;
   text-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
-  background:
-    radial-gradient(circle at 25% 30%, rgba(255, 105, 210, 0.55), transparent 60%),
-    radial-gradient(circle at 80% 25%, rgba(165, 85, 255, 0.45), transparent 65%),
-    radial-gradient(circle at 35% 70%, rgba(85, 130, 255, 0.45), transparent 70%),
-    radial-gradient(circle at 75% 80%, rgba(60, 200, 175, 0.4), transparent 75%),
-    radial-gradient(circle at 50% 50%, rgba(255, 220, 120, 0.35), transparent 70%),
-    #000;
-  background-size: 450% 450%;
+  background: linear-gradient(
+      -45deg,
+      #6b2d8c,
+      #b05cc6,
+      #ff69b4,
+      #ffa7e6,
+      #32cd32,
+      #9affd9,
+      #ffff66,
+      #fff7ae
+    );
+  background-size: 400% 400%;
   background-attachment: fixed;
   animation: nebula-swirl 80s linear infinite;
 
