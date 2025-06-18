@@ -5,14 +5,17 @@ body {
   text-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
   background: linear-gradient(
       -45deg,
-      #6b2d8c,
-      #b05cc6,
-      #ff69b4,
-      #ffa7e6,
-      #32cd32,
-      #9affd9,
+      #ff99cc,
+      #ff66ff,
+      #ff0033,
+      #ffcc33,
       #ffff66,
-      #fff7ae
+      #ccff66,
+      #66ff99,
+      #66ffff,
+      #6699ff,
+      #9966ff,
+      #ff3366
     );
   background-size: 400% 400%;
   background-attachment: fixed;
