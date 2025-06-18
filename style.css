@@ -4,11 +4,13 @@ body {
   color: #fff;
   text-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
   background:
-    radial-gradient(circle at 20% 20%, #ff99cc, transparent 60%),
-    radial-gradient(circle at 80% 30%, #9966ff, transparent 60%),
-    radial-gradient(circle at 40% 80%, #66ff99, transparent 60%),
-    radial-gradient(circle at 70% 70%, #ffcc33, transparent 60%),
-    radial-gradient(circle at 50% 50%, #6699ff, #2b0a3d 60%);
+    radial-gradient(circle at 20% 20%, #6699ff, transparent 60%), /* blue */
+    radial-gradient(circle at 70% 30%, #ff99cc, transparent 60%), /* pink */
+    radial-gradient(circle at 30% 60%, #ff6666, transparent 60%), /* red */
+    radial-gradient(circle at 80% 70%, #9966ff, transparent 60%), /* purple */
+    radial-gradient(circle at 40% 80%, #66ff99, transparent 60%), /* green */
+    radial-gradient(circle at 60% 50%, #ffcc33, transparent 60%), /* yellow */
+    radial-gradient(circle at 50% 50%, #2b0a3d, #2b0a3d 60%);
   background-color: #2b0a3d;
   background-repeat: no-repeat;
 
