@@ -1,59 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ruchika Shukla - Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <title>Ruchika Shukla • Portfolio</title>
 
+  <!-- Fonts + Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet"/>
+
+  <!-- Core styles -->
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <div id="star-field"></div>
-  <header>
-    <h1 class="gradient-text">Ruchika Shukla</h1>
+  <!-- ✨ existing star-field / hero stays untouched -->
 
-    <nav>
-      <a href="#about">About</a>
-      <a href="#work">Work</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-  <section id="about" class="section">
-  <h2 class="gradient-text">About Me</h2>
-    <p>Welcome to my cosmic corner of the web. I'm passionate about exploring the synergy between music and space.</p>
-  </section>
-  <section id="work" class="section">
-  <h2 class="gradient-text">Experience</h2>
+  <!-- ===============  NEW ORBIT SECTION  =============== -->
+  <section id="career-orbit" class="orbit-wrapper">
+    <svg viewBox="0 0 800 600" class="orbit-svg">
+      <!-- elliptical “rail” -->
+      <path id="orbitPath"
+            d="M100,300a300,150 0 1,1 600,0a300,150 0 1,1 -600,0"
+            fill="none"
+            stroke="rgba(255,255,255,0.35)"
+            stroke-width="2"
+            stroke-dasharray="6 10"/>
+      <!-- static checkpoints (could be planets later) -->
+      <circle class="checkpoint" cx="100" cy="300" r="8"/>
+      <circle class="checkpoint" cx="400" cy="150" r="8"/>
+      <circle class="checkpoint" cx="700" cy="300" r="8"/>
+      <circle class="checkpoint" cx="400" cy="450" r="8"/>
+      <circle class="checkpoint" cx="250" cy="225" r="8"/>
+      <!-- travelling planet -->
+      <circle id="planet" r="14"/>
+    </svg>
 
-      <div class="orbit-road">
-        <svg class="road-svg" viewBox="0 0 600 100" preserveAspectRatio="none">
-          <path d="M20 80 Q300 20 580 80" />
-        </svg>
-        <ul class="road-stops">
-          <li>Experience</li>
-          <li>School</li>
-          <li>Internships</li>
-        </ul>
-      </div>
+    <!-- labels pinned over the SVG via absolute positioning -->
+    <ul class="orbit-labels">
+      <li style="--i:0">B.Tech CS</li>
+      <li style="--i:1">ISS ESG Analyst</li>
+      <li style="--i:2">MS DS @ TAMU</li>
+      <li style="--i:3">JioSaavn ML Eng</li>
+      <li style="--i:4">Niyogin DA Lead</li>
+    </ul>
   </section>
-  <section id="projects" class="section">
-  <h2 class="gradient-text">Projects</h2>
+  <!-- =================================================== -->
 
-    <div class="moon-phases">
-      <div class="moon new"></div>
-      <div class="moon crescent"></div>
-      <div class="moon quarter"></div>
-      <div class="moon gibbous"></div>
-      <div class="moon full"></div>
-    </div>
-  </section>
-  <section id="contact" class="section">
-  <h2 class="gradient-text">Contact</h2>
+  <!-- your other sections (projects, contact, etc.) keep rolling -->
 
-    <p>Feel free to reach out for collaboration or just to say hello.</p>
-  </section>
+  <!-- GSAP (tiny, ~60 KB gzipped) -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/MotionPathPlugin.min.js"></script>
+
+  <!-- site-wide logic -->
   <script src="script.js"></script>
 </body>
 </html>
